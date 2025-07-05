@@ -28,9 +28,9 @@ Antes de começar, você precisará garantir que os seguintes itens estejam inst
 
 Este projeto utiliza o **Entity Framework Core** para mapear entidades para o banco de dados. Para que o banco de dados seja criado corretamente, é necessário gerar as migrations.
 
-### Passo 1: Criar a Migration Inicial
+### Passo 1: Criar as tabelas atravé das migrations existentes
 
-Para criar a migration inicial, abra o terminal e execute o seguinte comando na raiz do seu projeto:
+Para criar a as tabelas no banco, basta criar um banco de dados no sql server, abrir o terminal e execute o seguinte comando no projeto TesteLar.Infra:
 
 ```bash
-dotnet ef migrations add InitialCreate
+Update-Database
